@@ -17,8 +17,8 @@ public  class RegistrationLoginApp {
      */
     public static void main(String[] args) {
         RegistrationLogin rory = new RegistrationLogin();
-       
-        
+        messaging.messaging key = new messaging(messageNumber, recipient, messageText);
+    
         Scanner input = new Scanner(System.in);
         // Must contain underscore and <=5 chars
         System.out.println("Enter username");
@@ -53,4 +53,26 @@ public  class RegistrationLoginApp {
             System.out.println("InCorrect");
 }
 }
+
+    public boolean CheckCellPhoneNumber(int recipientNo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+    public static void message() {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Enter message number: ");
+    int messageNumber = scanner.nextInt();
+    scanner.nextLine();
+
+    System.out.print("Enter recipient phone number: ");
+    String recipient = scanner.nextLine();
+
+    System.out.print("Enter message text: ");
+    String messageText = scanner.nextLine();
+
+    // Declare a new key for the messaging class
+    messaging key = new messaging(messageNumber, recipient, messageText);
+
+    System.out.println(key.printMessage());
 }
+    }

@@ -10,6 +10,8 @@ package registrationloginapp;
  */
 class RegistrationLogin {
 
+    private String cellnum;
+
     public boolean checkUsername(String username) {
         if (username.length() < 5 && username.contains("_")) {
             return true;
@@ -68,6 +70,10 @@ class RegistrationLogin {
         } else {
             return "Username or password incorrect, please try again.";
         }
+    }
+
+    private boolean CheckUserName(String username) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
